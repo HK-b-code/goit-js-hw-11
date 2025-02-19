@@ -32,6 +32,8 @@ searchForm.addEventListener('submit', async e => {
   e.preventDefault();
   const searchQuery = e.target.elements.searchQuery.value.trim();
 
+  document.querySelector('.gallery').innerHTML = '';
+
   loadingMessage.style.display = 'none';
 
   if (!searchQuery) {
